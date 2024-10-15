@@ -1,0 +1,105 @@
+:root {
+    --main-color: #0078F6;
+    --background: #FAFAFA;
+    --text-grey: #888888;
+}
+*{
+    font-family: "Inter";
+    color: white;
+}
+span{
+    color: white;
+    font-size: 20px;
+}
+body{
+    margin: 0;
+    background-color: var(--background);
+}
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 1000px;
+}
+.slider{
+    display: flex;
+}
+.Item{
+    margin-left: 30px;
+    border-radius: 9px;
+    height: 360px;
+    width: 244px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+.Item:hover{
+    transform: scale(1.1);
+
+}
+.Item h2{
+    color: white;
+    font-size: 16px;
+}
+.item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-header p{
+    color: white;
+    font-size: 12px;
+}
+.liveDot{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+}
+.category{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    width: fit-content;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    background: linear-gradient(rgb(0,0,0,0.6) -20%,#000000 100%),url(asset/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header{
+    position: relative;
+    z-index: 5;
+}
+.header{
+    padding: 24px 0 19px 0;
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+}
+#bar-icon{
+    color: white;
+    font-size: 30px;
+}
+.logo{
+    height: 18px;
+    max-width: 100%;
+}
