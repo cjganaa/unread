@@ -77,13 +77,96 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
-  height: 1000px;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content{
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+.hero-img{
+  height: 446px;
+  width: 446px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero-img img{
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.hero-img img:hover{
+  transform: scale(1.1);
+}
+.account{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.hero-text{
+  max-width: 440px;
+}
+@keyframes live{
+  0% {color: transparent;}
+  100% {color: var(--main-color);}
+}
+.hero-text h5{
+  font-size: 14px;
+  animation-name: live;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.hero-type{
+  font-size: 35px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 7px 0 0 0;
+}
+.accImg{
+  border: 1px solid;
+  border-color: rgb(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.accImg:hover{
+  border-color: white;
+}
+.accImg img{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.account-name{
+  font-size: 12px;
+  color: var(--text-grey);
+  opacity: 75%;
+  font-weight: bold;
+}
+
+.account-date{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
 }
 header {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 300px;
+  right: 300px;
   z-index: 5;
 }
 .header {
@@ -91,12 +174,12 @@ header {
   margin: 0 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 #bar-icon {
   color: white;
   font-size: 30px;
+  margin-right: 100px;
 }
 .logo {
   height: 18px;
@@ -116,6 +199,15 @@ header {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+.social-icons{
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-icons span{
+  opacity: 50%;
 }
 #search-input {
   background-color: transparent;
@@ -139,6 +231,7 @@ header {
   align-items: center;
 }
 .mid-nav {
+  flex: 1;
   display: flex;
   justify-content: space-between;
 }
