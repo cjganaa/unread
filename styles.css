@@ -1,7 +1,7 @@
 :root {
   --main-color: #0078f6;
   --background: #fafafa;
-  --text-grey: #888888;
+  --text-gray: #888888;
 }
 * {
   font-family: "Inter";
@@ -91,12 +91,15 @@ nav {
   height: 446px;
   width: 446px;
   border-radius: 20px;
+  display: flex;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 .hero-img img{
   height: 100%;
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .hero-img img:hover{
   transform: scale(1.1);
@@ -151,7 +154,7 @@ nav {
 }
 .account-name{
   font-size: 12px;
-  color: var(--text-grey);
+  color: var(--text-gray);
   opacity: 75%;
   font-weight: bold;
 }
@@ -249,19 +252,83 @@ i {
   position: relative;
 }
 .editors-choice{
-    display: flex;
-    justify-content: space-around;
-    font-size: 24px;
-    font-weight: bold;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
 }
 .pre-and-next{
-    background-color: rgba(192, 192, 192, 0.6);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    height: 27px;
-    width: 53px;
+  background-color: rgba(192, 192, 192, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  height: 27px;
+  width: 53px;
+}
+main{
+  margin:300px 200px 0px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content-item-main{
+  background-color: white;
+  margin-top: 13px;
+  height: 183px;
+  width: 739px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0 27px 27px 27px;
+  padding: 20px 65px 20px 20px;
+  box-shadow: 0px 0px 50px 4px rgba(209, 209, 209, 0.3);
+  box-sizing: border-box;
+}
+.content-item-category{
+  font-size: 12px;
+  color: var(--main-color);
+}
+.content-item-main h1{
+  color: black;
+}
+.content-item-right{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content-item-right .account{
+  flex-direction: row-reverse;
+}
+.content-item-right .account-name{
+  text-align: end;
+}
+.content-item-right .content-item-main{
+  border-radius: 27px 0 27px 27px;
+}
+.main-img{
+  border-radius: 50%;
+  height: 135px;
+  width: 136px;
+}
+footer{
+  background-color: #000000;
+  height: 1000px;
+}
+.main-bottom{
+  background-color: var(--background);
+  height: 82px;
+  border-radius: 0 0 36px 36px;
+}
+.footer-icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 50%;
+  color: white;
+}
+.footer-icons span{
+  font-size: 50px;
 }
