@@ -332,3 +332,78 @@ footer{
 .footer-icons span{
   font-size: 50px;
 }
+.footer-contents{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
+}
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.copyright{
+  color: var(--text-gray);
+  font-size: 10px;
+  max-width: 400px;
+}
+.requests{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.request{
+  background-image: url(asset/blackBack.png);
+  height: 90px;
+  width: 323px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  padding: 25px;
+}
+.request-text{
+  font-size: 13px;
+  font-weight: 500;
+}
+.request-text h6{
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.3;
+  font-size: 12px;
+  margin: 0;
+}
+.textandbutton{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.circle-button{
+  background-color: black;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.stores{
+  margin: 0 8px 8px 8px ;
+  display: flex;
+  justify-content: space-between;
+}
+.stores img{
+  height: 46px;
+  width: 144px;
+}
+.three-columns{
+  display: flex;
+}
