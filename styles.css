@@ -172,8 +172,8 @@ nav {
 header {
   position: absolute;
   top: 0;
-  left: 300px;
-  right: 300px;
+  left: 10%;
+  right: 10%;
   z-index: 5;
 }
 .header {
@@ -278,7 +278,7 @@ main{
 }
 .main {
   margin-top: 300px;
-  width: 1135px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,7 +362,7 @@ main{
   margin-top: 20px;
   margin-bottom: 60px;
   display: grid;
-  width: 1135px;
+  width: 70%;
   height: 633px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 45% 15% 40%;
@@ -544,6 +544,7 @@ footer {
   background-color: #0077f683;
 }
 .stores {
+  width: 323px;
   margin: 0 8px 8px 8px;
   display: flex;
   justify-content: space-between;
@@ -574,4 +575,62 @@ footer {
 .footer-category:hover{
   transform: translateX(2px);
   color: white;
+}
+@media screen and (max-width: 1550px) {
+  .right-nav {
+    display: none;
+  }
+  .Item{
+    height: 310px;
+    width: 194px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .main{
+    width: 90%;
+  }
+  .content-item-main{
+    width: 100%;
+  }
+  .footer-icons{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .dates{
+    display: none;
+  }
+  .right-nav {
+    display: none;
+  }
+  .left-nav input{
+    display: none;
+  }
+  .left-nav{
+    gap: 0;
+  }
+  .social-icons{
+    display: none;
+  }
+  .hero-img{
+    display: none;
+  }
+  .Item{
+    height: 250px;
+    width: 134px;
+  }
+  .footer-contents{
+    display: block;
+    gap: 5px;
+  }
+  .contents{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+  }
+  .content{
+    width: 100%;
+    height: 400px;
+  }
 }
